@@ -1,0 +1,21 @@
+.small-card__container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.small-card__author {
+    color: var(--medium-gray);
+    font-size: 0.9em;
+}
+
+.small-card__image > img {
+    max-height: 120px;
+}
+
+.small-card__title {
+    max-width: 500px;
+}
+
+.small-card__title > p {
+    margin-left: 10px;
+}
