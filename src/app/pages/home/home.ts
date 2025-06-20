@@ -13,7 +13,7 @@ import { SmallCard } from '../../components/small-card/small-card';
     SmallCard
   ],
   templateUrl: './home.html',
-  styleUrl: './home.css'
+  styleUrls: ['./home.css', './home.responsive.css']
 })
 export class Home {
 
