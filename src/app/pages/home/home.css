@@ -1,0 +1,10 @@
+.articles__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+}
+
+.articles__container > div {
+    margin: 15px;
+}
