@@ -1,0 +1,25 @@
+.big-card__container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-height: 600px;
+    max-width: 400px;
+}
+
+.big-card__author > p {
+    color: var(--medium-gray);
+    font-size: 0.9em;
+}
+
+.big-card__image > img {
+    width: 100%;
+}
+
+.big-card__title > h2 {
+    margin: 10px auto;
+}
+
+.big-card__description > p {
+    color: var(--medium-gray);
+}
