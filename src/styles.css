@@ -1,11 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root {
+    --dark-gray: #111111;
+    --medium-gray: #808080;
+    --white: #FFFFFF;
+}
+
 * {
     box-sizing: border-box;
+    color: var(--white);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: #111111;
+    background-color: var(--dark-gray);
+    color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--medium-gray);
+    transition: 120ms;
 }
