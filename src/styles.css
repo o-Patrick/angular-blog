@@ -16,7 +16,7 @@
 
 body {
     background-color: var(--dark-gray);
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 a {

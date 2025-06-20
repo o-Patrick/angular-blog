@@ -1,16 +1,16 @@
 <div class="big-card__container">
     <a href="#">
         <div class="big-card__image">
-            <img src="https://plein8.com/wp-content/uploads/2024/09/placeholder-2-1.png" alt="">
+            <img src="{{ photoCover }}" alt="{{ photoAlternativeText }}">
         </div>
         <div class="big-card__author">
-            <p>By Anonymous</p>
+            <p>{{ cardAuthor }}</p>
         </div>
         <div class="big-card__title">
-            <h2>Saiu a nova versão do Angular</h2>
+            <h2>{{ cardTitle }}</h2>
         </div>
         <div class="big-card__description">
-            <p>Aenean molestie sit amet elit vitae porttitor. Nam lobortis neque eleifend dui varius, non fermentum eros fermentum. Donec eu convallis dui, quis consectetur felis. Maecenas nec orci a libero bibendum interdum.</p>
+            <p>{{ cardDescription }}</p>
         </div>
     </a>
 </div>
