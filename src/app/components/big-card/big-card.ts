@@ -1,13 +1,19 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-big-card',
-  imports: [CommonModule],
+  imports: [
+    CommonModule,
+    RouterLink
+  ],
   templateUrl: './big-card.html',
   styleUrl: './big-card.css'
 })
-export class BigCard implements OnInit {
+export class BigCard {
+  @Input()
+  Id: string = "0";
   @Input()
   photoCover: string;
   @Input()
@@ -25,8 +31,5 @@ export class BigCard implements OnInit {
     this.cardAuthor = '';
     this.cardTitle = '';
     this.cardDescription = '';
-  }
-
-  ngOnInit(): void {
   }
 }

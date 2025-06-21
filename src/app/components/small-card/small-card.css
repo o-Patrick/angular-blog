@@ -1,4 +1,4 @@
-.small-card__container {
+.small-card__container > a {
     display: flex;
     margin-bottom: 20px;
 }

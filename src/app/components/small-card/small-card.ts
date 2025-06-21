@@ -1,12 +1,15 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-small-card',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './small-card.html',
   styleUrl: './small-card.css'
 })
-export class SmallCard implements OnInit {
+export class SmallCard {
+  @Input()
+  Id: string;
   @Input()
   photoCover: string;
   @Input()
@@ -17,12 +20,10 @@ export class SmallCard implements OnInit {
   cardTitle: string;
 
   constructor() {
+    this.Id = "";
     this.photoCover = '';
     this.photoAlternativeText = '';
     this.cardAuthor = '';
     this.cardTitle = '';
-  }
-
-  ngOnInit(): void {
   }
 }
