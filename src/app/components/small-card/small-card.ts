@@ -9,7 +9,7 @@ import { RouterLink } from '@angular/router';
 })
 export class SmallCard {
   @Input()
-  Id: string;
+  id: string;
   @Input()
   photoCover: string;
   @Input()
@@ -20,7 +20,7 @@ export class SmallCard {
   cardTitle: string;
 
   constructor() {
-    this.Id = "";
+    this.id = '';
     this.photoCover = '';
     this.photoAlternativeText = '';
     this.cardAuthor = '';
